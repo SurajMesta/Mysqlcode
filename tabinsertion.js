@@ -14,7 +14,7 @@ m1.connect(function(err){
         console.log(err)
     }
      
-    const values= [[ '1' , 'Darshan' , '50000' , 'darshan47@yahoo.com' , 'YES'] ,
+    const arr= [[ '1' , 'Darshan' , '50000' , 'darshan47@yahoo.com' , 'YES'] ,
 [ '2' , 'Suraj' , '40000' , 'surajmesta47@gmail.com' , 'YES'] ,
 [ '3' ,'DarshanKA47' , '30000' , 'darshanmesta33@gmail.com' , 'YES']
 
@@ -24,7 +24,7 @@ m1.connect(function(err){
 
 const q = 'INSERT INTO EMPDETAILS VALUES  ? '   
 
-m1.query(q,[values],function(err,result){
+m1.query(q,[arr],function(err,result){
     if(err){
         assert.equal(null,err)
 
